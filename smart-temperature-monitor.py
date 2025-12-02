@@ -39,11 +39,11 @@ while True:
 
     # Display status
     if temperature < 15:
-        status_text = font_small.render("⚠️ Too Cold!", True, BLUE)
+        status_text = font_small.render("Too Cold!", True, BLUE)
     elif temperature > 35:
-        status_text = font_small.render("🔥 Too Hot!", True, RED)
+        status_text = font_small.render("Too Hot!", True, RED)
     else:
-        status_text = font_small.render("✅ Normal Range", True, GREEN)
+        status_text = font_small.render("Normal Range", True, GREEN)
     screen.blit(status_text, (WIDTH//2 - status_text.get_width()//2, HEIGHT//2 + 20))
 
     pygame.display.update()
